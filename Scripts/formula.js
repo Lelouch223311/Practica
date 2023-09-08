@@ -5,7 +5,7 @@ if(age < 16){
 // window.location.replace("http://stackoverflow.com");
 
 // similar behavior as clicking on a link
-    window.location.href = "/index.html";
+    window.location.href = "./index.html";
 } else{
     alert('Проверка на возраст прошла успешно !Вы указали что Ваш возраст '+age+' !')
 }
