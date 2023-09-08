@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/formula.css">
+</head>
+<body>
+    <script src="Scripts/formula.js"></script>
+    <header>
+        <p>Здравствуйте ! Введите пожалуйста данные поля ниже !</p>
+        <label for="">
+            <span>Введите Ваше Имя:</span>
+            <input type="text" name="name1" id="name1" placeholder="Имя">
+        </label>
+        <label for="" class="famText">
+            <span>Введите Вашу Фамилию:</span>
+            <input type="text" name="" id="" placeholder="Фамилия">
+        </label>
+        <label for="" class="email">
+            <span>Введите свой E-Mail:</span>
+            <input type="email" name="" id="" placeholder="Ваш e-mail...">
+        
+        </label>
+        <div class="text">
+            <p>Напишите на какую должность желаете вступить,какой у вас опыт,и сколько вам лет.</p>
+            <textarea name="" id="" cols="30" rows="10"></textarea>       
+        </div>
+        <form onsubmit="let subm = confirm('Готовы ли вы отправить своё резюме Разработчикам ?'); if(subm == true){alert('Успешно отправлено !(Нет)')} else {alert('Вы отказались от всего !')}">
+            <input type="submit" value="Отправить" class="submit">
+          </form>  
+          <button onclick="window.location.href = '/index.html'">
+            <div class="rotateToZ">
+                <a href="/index.html">Главная</a>
+            </div>
+        </button>    
+    </header>
+    
+</body>
+</html>
