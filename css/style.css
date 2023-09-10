@@ -70,6 +70,94 @@ a:hover {
     }
 }
 
+.zvezda-parent{
+    display: flex;
+    justify-content: space-between;
+    /* display: none; */
+    animation: zvezda11 2.5s 0s linear infinite;
+}
+
+@keyframes zvezda11 {
+    0%{
+        display: flex;
+        transform: scale(0.1);
+        margin-left: 19px;
+        margin-top: 10px;
+        position: fixed;
+        /* transform: rotateY(45deg); */
+        color: red;
+    }
+    50%{
+        display: flex;
+        margin-left: 19px;
+        margin-top: 10px;
+        position: fixed;
+        transform: rotateY(45deg);
+        color: yellow;
+    }
+    100%{
+        display: flex;
+        transform: scale(1);
+        margin-left: 19px;
+        margin-top: 10px;
+        position: fixed;
+        transform: rotateY(45deg);
+        color: blue;
+    }
+}
+
+.zvezda{
+    display: flex;
+    margin-left: 110px;
+    margin-top: 10px;
+    position: fixed;
+    transform: scale(3);
+}
+.zvezda2{
+    display: flex;
+    margin-left: 70px;
+    margin-top: 10px;
+    position: fixed;
+    transform: scale(3);
+}
+.zvezda3{
+    display: flex;
+    margin-left: 30px;
+    margin-top: 10px;
+    position: fixed;
+    transform: scale(3);
+}
+
+
+.zvezda_parent_2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-left: -195px;
+    transform: rotateY(45deg);
+    
+}
+.zvezda12{
+    display: flex;
+    margin-left: 110px;
+    margin-top: 10px;
+    position: fixed;
+    transform: scale(3.6);
+}
+.zvezda22{
+    display: flex;
+    margin-left: 70px;
+    margin-top: 10px;
+    position: fixed;
+    transform: scale(3.6);
+}
+.zvezda33{
+    display: flex;
+    margin-left: 30px;
+    margin-top: 10px;
+    position: fixed;
+    transform: scale(3.6);
+}
 
 
 .element {
