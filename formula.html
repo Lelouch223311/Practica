@@ -8,29 +8,34 @@
     <link rel="shortcut icon" href="./icon/first-icon-photoshop.png" type="image/x-icon">
 </head>
 <body>
-    <script src="./Scripts/formula.js"></script>
     <header>
         <p>Здравствуйте ! Введите пожалуйста данные поля ниже !</p>
         <label for="">
             <span>Введите Ваше Имя:</span>
-            <input type="text" name="name1" id="name1" placeholder="Имя">
+            <input type="text" id="name" placeholder="Имя">
         </label>
         <label for="" class="famText">
             <span>Введите Вашу Фамилию:</span>
-            <input type="text" name="" id="" placeholder="Фамилия">
+            <input type="text" name="" id="family" placeholder="Фамилия">
         </label>
         <label for="" class="email">
             <span>Введите свой E-Mail:</span>
-            <input type="email" name="" id="" placeholder="Ваш e-mail...">
+            <input type="email" name="" id="email" placeholder="Ваш e-mail...">
         
         </label>
         <div class="text">
             <p>Напишите на какую должность желаете вступить,какой у вас опыт,и сколько вам лет.</p>
-            <textarea name="" id="" cols="30" rows="10"></textarea>       
+            <textarea name="" id="text" cols="30" rows="10"></textarea>       
         </div>
-        <form onsubmit="let subm = confirm('Готовы ли вы отправить своё резюме Разработчикам ?'); if(subm == true){alert('Успешно отправлено !(Нет)')} else {alert('Вы отказались от всего !')}">
-            <input type="submit" value="Отправить" class="submit">
-          </form>  
+        <!-- <form onsubmit="let subm = confirm('Готовы ли вы отправить своё резюме Разработчикам ?'); if(subm == true){alert('Успешно отправлено !(Нет)')} else {alert('Вы отказались от всего !')}"> -->
+            <!-- <input type="submit" value="Отправить" class="submit"> -->
+            <div class="output">
+
+            
+            </div>
+
+            <button onclick="Save()"> Отправить </button>
+          <!-- </form>   -->
           <button onclick="window.location.href = './index.html'">
             <div class="rotateToZ">
                 <a href="./index.html">Главная</a>
@@ -38,5 +43,7 @@
         </button>    
     </header>
     
+
+    <script src="./Scripts/formula.js"></script>
 </body>
 </html>

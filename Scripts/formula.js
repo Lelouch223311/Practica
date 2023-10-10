@@ -1,3 +1,5 @@
+
+/*
 let age = +prompt('Здравствуйте ! Для доступа к странице,укажите пожалуйста ваш возраст\n\Напоминаем: Сайт 16+ !', '16')
 if(age < 16){
     alert('Извините,вы не имеете доступа к этой странице !\n\Ваш Возраст меньше чем нужен для посещения этой страницы !')
@@ -9,16 +11,33 @@ if(age < 16){
 } else{
     alert('Проверка на возраст прошла успешно !Вы указали что Ваш возраст '+age+' !')
 }
+*/
 
-/*
-let submit = confirm('Готовы ли вы отправить своё резюме Разработчикам ?')
+let arr = []
+let name = document.getElementById('name')
+let family = document.getElementById('family')
+let email = document.getElementById('email')
 
-function formula(){
-    if(submit == true){
-        alert('Успешно отправлено !(Нет)')
-    } else{
-        alert('Вы отказались от всего !')
+
+let output = document.querySelector(".output")
+
+
+function Save() {
+    arr.push({ name: name.value, family: family.value, email: email.value })
+    alert("Подтвердите своё действие !")
+    // console.log(arr)
+    showUserName()
+}
+
+function showUserName() {
+
+    output.innerHTML = ""
+
+    for (let i = 0; i < arr.length; i++) {
+
+
+        output.innerHTML += arr[i].name + "<br>"
+
+
     }
 }
-*/
-// if(submit == true){alert('Успешно отправлено !(Нет)')} else{alert('Вы отказались от всего !')}
